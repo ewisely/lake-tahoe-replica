@@ -1,0 +1,54 @@
+
+/* Base Styles -------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	color: #fff;
+	margin: 0;
+	font: 1em/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+
+h1,
+h2 {
+font-family: 'Playfair Display', serif;
+font-size: ;
+
+}
+
+h1 {
+	font-size: 5.625rem; /* 90px/16px */
+	color: #fff;
+	text-shadow: 4px 4px 0 0 #000
+
+}
+
+h3 {
+
+}
+
+
+img {
+	max-width: 100%;
+
+}
+
+
+/* Main Styles -------------------- */
+
+.main-header {
+	padding-top: 170px;
+	height: 850px;
+	background: url('../images/vince-header.jpg') no-repeat center;
+  	background-size: cover;
+
+}
+
+
+.primary-content {
+
+
+}

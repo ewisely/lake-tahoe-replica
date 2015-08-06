@@ -1,0 +1,263 @@
+
+/* Base Styles -------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	color: #000;
+	margin: 0;
+	font: 1em/1.5 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+
+}
+
+h1,
+h2 {
+font-family: 'Playfair Display', serif;
+
+}
+
+h1 {
+	
+	font-size: 7.5em; /* 120px/16px */
+	color: #fff;
+	text-shadow: 8px 0 #000,
+				 6px 0 #000,
+				 4px 0 #000;
+	margin: 0 0 0 40px;
+	font-weight: 900;
+}
+
+h2 {
+font-size: 2rem; /*32px/16px*/
+font-weight: 400;
+color: #000;
+}
+
+
+
+h3 {
+
+}
+
+
+img {
+	max-width: 80%;
+	border-radius: 50%;
+}
+
+nav {
+	text-align: center;
+	padding: 10px 0;
+	margin: 20px 0 0;
+
+}
+
+nav ul {
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	font-weight: 900;
+	padding: 15px 10px;
+
+}
+
+/* Main Styles -------------------- */
+
+.main-header {
+	padding-top: 400px;
+	padding-left: 60px;
+	height: 600px;
+	background: url('../images/vince-header.jpg') no-repeat center;
+  	background-size: cover;
+/*  	border-bottom: 6px solid #000;
+*/
+}
+
+
+.primary-content, 
+.secondary-content {
+/*	padding: 50px 50px;*/
+	font-size: 1.25rem;
+}
+
+
+.primary-content {
+padding-top: 75px;
+padding-bottom: 55px;
+line-height: 2.15rem;
+
+}
+
+
+.intro {
+	font: 1em/1.5 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+
+}
+
+
+.secondary-content {
+	padding-top: 70px;
+	padding-bottom: 50px;
+}
+
+
+nav a, nav a:visited {
+	color: #000;
+
+	}	
+
+nav a:hover, nav a.selected {
+	color: #33AD5C;
+	
+}
+
+/* Layout Styles ------------------ */
+
+.primary-content,
+.secondary-content {
+	width: 75%;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin: auto;
+	max-width: 960px;
+
+}
+
+
+
+/*  FLOATED COLUMNS  -------------------- */
+
+
+.athletics,
+.family {
+	width: 40%;
+}
+
+
+.athletics {
+	float: left;
+}
+
+.family {
+	float: right;
+
+}
+
+
+/*FLOAT CLEARFIX ---------*/
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+.t-border {
+  	border-bottom: 2px solid #dfe2e6;
+/*  	margin: 30 60px 60px 60px;
+*/  	width: 900px;
+
+
+}
+
+.main-footer {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	border-bottom: 20px solid #000;
+	text-align: center;
+
+}
+
+.main-footer p {
+	color: #000;
+
+}
+
+
+/*Media QUeries ---------*/
+
+@media (max-width: 1024px) {
+	.primary-content,
+	.secondary-content {
+	width: 90%;
+	}
+}
+
+
+
+
+@media (max-width: 800px) {
+
+.primary-content,
+	.secondary-content {
+	width: 100%;
+	padding: 60px 40px;
+	border-top: none;
+	}
+
+	.main-header {
+	max-height: 330px;
+	padding: 200px 25px 0;
+	}
+
+	h1 {
+	font-size: 3rem;
+	padding: 50px 25px 0 0;
+	}
+	
+	.t-border {
+	width: 250px;
+	}
+
+	.primary-content,
+	.secondary-content {
+	width: 80%;
+	padding: 60px;
+	border-top: none;
+	}
+
+	.athletics,
+	.family {
+	float: none;
+	width: 80%;
+	margin: 50px 20px;
+	padding: 20px;
+	}
+}
+
+
+
+
+
+/*
+
+@media (max-width: 528px) {
+	.athletics,
+	.family {
+	float: none;
+	}
+
+	.title {
+	padding: 200px 20px 5px 5px;
+	font-size: 1rem;
+	}
+
+
+
+}*/
